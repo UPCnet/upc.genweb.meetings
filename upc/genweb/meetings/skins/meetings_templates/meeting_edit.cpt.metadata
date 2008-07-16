@@ -1,0 +1,11 @@
+[default]
+title = Edit Vacaciones
+
+[validators]
+validators = validate_vacaciones
+validators..cancel =
+
+[actions]
+action.success = traverse_to:string:do_save_vacaciones
+action.success..cancel = traverse_to:string:go_back
+action.failure = traverse_to_action:string:edit

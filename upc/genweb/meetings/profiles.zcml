@@ -1,0 +1,20 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="upc.genweb">
+
+  <!-- ##code-section profiles.zcml-top #fill in your manual code here -->
+  <!-- ##/code-section profiles.zcml-top -->
+
+  <genericsetup:registerProfile
+      name="default"
+      title="Genweb Meetings"
+      directory="profiles/default"
+      description="Extension profile for meetings."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+  
+  <!-- ##code-section profiles.zcml #fill in your manual code here -->
+  <!-- ##/code-section profiles.zcml -->
+
+</configure>

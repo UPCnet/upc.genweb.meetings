@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<import-steps>
+
+<import-step 
+    id="meetings-GS-dependencies" 
+    handler="upc.genweb.meetings.setuphandlers.installGSDependencies"
+    title="Dependend GS profiles for meetings"
+    version="2008-07-16T11:53:55.362513">
+   <dependency step="plone-final"/>
+   <dependency step="meetings-QI-dependencies"/>
+   Install Generic Setup profile dependencies for meetings
+ </import-step>
+
+ <import-step 
+    id="meetings-QI-dependencies" 
+    handler="upc.genweb.meetings.setuphandlers.installQIDependencies"
+    title="Dependend QI installables for meetings"
+    version="2008-07-16T11:53:55.362513">
+   Install quickinstaller dependencies for meetings
+ </import-step>
+ 
+     
+
+
+ <import-step 
+    id="meetings-Update-RoleMappings" 
+    handler="upc.genweb.meetings.setuphandlers.updateRoleMappings"
+    title="Update Workflow role mappings for meetings"
+    version="2008-07-16T11:53:55.362513">
+   <dependency step="meetings-QI-dependencies"/>
+   updates the workflow role mappings for meetings
+ </import-step>
+
+ <import-step 
+    id="meetings-postInstall" 
+    handler="upc.genweb.meetings.setuphandlers.postInstall"
+    title="manual coded post-install for meetings"
+    version="2008-07-16T11:53:55.362513">
+   <dependency step="meetings-QI-dependencies"/>
+   manual coded post-install for meetings
+ </import-step>
+
+<!-- ##code-section ADDITIONALSTEPS -->
+<!-- ##/code-section ADDITIONALSTEPS --> 
+
+</import-steps>
+ 
