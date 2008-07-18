@@ -21,6 +21,9 @@ from Products.CMFDynamicViewFTI.browserdefault import BrowserDefaultMixin
 
 from upc.genweb.meetings.config import *
 
+# additional imports from tagged value 'import'
+from Products.AJAXAddRemoveWidget.AJAXAddRemoveWidget import AJAXAddRemoveWidget
+
 ##code-section module-header #fill in your manual code here
 ##/code-section module-header
 
@@ -29,18 +32,21 @@ schema = Schema((
     DateTimeField(
         name='date',
         widget=DateTimeField._properties['widget'](
-            label='Date',
+            label="Date",
+            description="Meeting date and time",
             label_msgid='meetings_label_date',
+            description_msgid='meetings_help_date',
             i18n_domain='meetings',
         ),
     ),
     LinesField(
         name='atendees',
-        widget=LinesField._properties['widget'](
-            label='Atendees',
+        widget=AJAXAddRemoveWidget(
+            label="Atendees",
             label_msgid='meetings_label_atendees',
             i18n_domain='meetings',
         ),
+        vocabulary='getUsers',
     ),
     TextField(
         name='agenda',
@@ -82,9 +88,20 @@ class Meeting(BaseContent, BrowserDefaultMixin):
     schema = Meeting_schema
 
     ##code-section class-header #fill in your manual code here
+    security.declarePublic('getUsers')
+    def getUsers(self):
+        """
+        """
+        from Products.CMFCore.utils import getToolByName
+
+        mt = getToolByName(self, 'portal_membership')
+        return DisplayList(tuple([(m.id,m.getProperty('fullname') or m.id) for m in mt.listMembers()]))
+
+
     ##/code-section class-header
 
     # Methods
+
 
 registerType(Meeting, PROJECTNAME)
 # end of class Meeting

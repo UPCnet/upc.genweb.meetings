@@ -1,0 +1,13 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:browser="http://namespaces.zope.org/browser"
+           xmlns:five="http://namespaces.zope.org/five">
+  
+  <browser:page
+  	name="ajaxaddremove-atendees"
+  	class=".Meetings.Atendees"
+  	for="*"
+  	template="atendees.pt"
+  	permission="zope2.View"
+  	/>
+
+</configure>

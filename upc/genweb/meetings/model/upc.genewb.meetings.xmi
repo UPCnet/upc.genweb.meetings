@@ -1,6 +1,6 @@
 <?xml version = '1.0' encoding = 'UTF-8' ?>
 <XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' xmlns:UML2 = 'org.omg.xmi.namespace.UML2'
-  timestamp = 'Wed Jul 16 11:52:44 CEST 2008'>
+  timestamp = 'Thu Jul 17 23:05:49 CEST 2008'>
   <XMI.header><XMI.documentation>
     <XMI.exporter>Netbeans XMI Writer</XMI.exporter>
     <XMI.exporterVersion>1.0</XMI.exporterVersion>
@@ -698,9 +698,31 @@
         <UML:Class xmi.id = 'Im4202465am11b2b336e55mm7e3e' name = 'Meeting' visibility = 'public'
           isSpecification = 'false' isRoot = 'false' isLeaf = 'false' isAbstract = 'false'
           isActive = 'false'>
+          <UML:ModelElement.taggedValue>
+            <UML:TaggedValue xmi.id = 'Im35197781m11b32b8268amm7de1' isSpecification = 'false'>
+              <UML:TaggedValue.dataValue>from Products.AJAXAddRemoveWidget import AJAXAddRemoveWidget</UML:TaggedValue.dataValue>
+              <UML:TaggedValue.type>
+                <UML:TagDefinition xmi.idref = 'Im35197781m11b32b8268amm7de4'/>
+              </UML:TaggedValue.type>
+            </UML:TaggedValue>
+          </UML:ModelElement.taggedValue>
           <UML:Classifier.feature>
             <UML:Attribute xmi.id = 'Im4202465am11b2b336e55mm7e22' name = 'date' visibility = 'private'
               isSpecification = 'false' ownerScope = 'instance' changeability = 'changeable'>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id = 'Im4202465am11b2b336e55mm7dc4' isSpecification = 'false'>
+                  <UML:TaggedValue.dataValue>Date</UML:TaggedValue.dataValue>
+                  <UML:TaggedValue.type>
+                    <UML:TagDefinition xmi.idref = 'Im4202465am11b2b336e55mm7dc7'/>
+                  </UML:TaggedValue.type>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id = 'Im4202465am11b2b336e55mm7dc0' isSpecification = 'false'>
+                  <UML:TaggedValue.dataValue>Meeting date and time</UML:TaggedValue.dataValue>
+                  <UML:TaggedValue.type>
+                    <UML:TagDefinition xmi.idref = 'Im4202465am11b2b336e55mm7dc3'/>
+                  </UML:TaggedValue.type>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
               <UML2:TypedElement.type>
                 <UML:Class xmi.idref = 'Im4202465am11b2b336e55mm7e11'/>
               </UML2:TypedElement.type>
@@ -708,6 +730,26 @@
             <UML:Attribute xmi.id = 'Im4202465am11b2b336e55mm7e10' name = 'atendees'
               visibility = 'private' isSpecification = 'false' ownerScope = 'instance'
               changeability = 'changeable'>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id = 'Im4202465am11b2b336e55mm7dbf' isSpecification = 'false'>
+                  <UML:TaggedValue.dataValue>Atendees</UML:TaggedValue.dataValue>
+                  <UML:TaggedValue.type>
+                    <UML:TagDefinition xmi.idref = 'Im4202465am11b2b336e55mm7dc7'/>
+                  </UML:TaggedValue.type>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id = 'Im4202465am11b2b336e55mm7dbb' isSpecification = 'false'>
+                  <UML:TaggedValue.dataValue>AJAXAddRemoveWidget</UML:TaggedValue.dataValue>
+                  <UML:TaggedValue.type>
+                    <UML:TagDefinition xmi.idref = 'Im4202465am11b2b336e55mm7dbe'/>
+                  </UML:TaggedValue.type>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id = 'Im35197781m11b32b8268amm7ddd' isSpecification = 'false'>
+                  <UML:TaggedValue.dataValue>python:0</UML:TaggedValue.dataValue>
+                  <UML:TaggedValue.type>
+                    <UML:TagDefinition xmi.idref = 'Im35197781m11b32b8268amm7de0'/>
+                  </UML:TaggedValue.type>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
               <UML2:TypedElement.type>
                 <UML:Class xmi.idref = 'Im4202465am11b2b336e55mm7deb'/>
               </UML2:TypedElement.type>
@@ -759,6 +801,61 @@
         <UML:Class xmi.id = 'Im4202465am11b2b336e55mm7dea' name = 'text' visibility = 'public'
           isSpecification = 'false' isRoot = 'false' isLeaf = 'false' isAbstract = 'false'
           isActive = 'false'/>
+        <UML:TagDefinition xmi.id = 'Im4202465am11b2b336e55mm7dc7' name = 'widget:label'
+          isSpecification = 'false'>
+          <UML:TagDefinition.multiplicity>
+            <UML:Multiplicity xmi.id = 'Im4202465am11b2b336e55mm7dc6'>
+              <UML:Multiplicity.range>
+                <UML:MultiplicityRange xmi.id = 'Im4202465am11b2b336e55mm7dc5' lower = '1'
+                  upper = '1'/>
+              </UML:Multiplicity.range>
+            </UML:Multiplicity>
+          </UML:TagDefinition.multiplicity>
+        </UML:TagDefinition>
+        <UML:TagDefinition xmi.id = 'Im4202465am11b2b336e55mm7dc3' name = 'widget:description'
+          isSpecification = 'false'>
+          <UML:TagDefinition.multiplicity>
+            <UML:Multiplicity xmi.id = 'Im4202465am11b2b336e55mm7dc2'>
+              <UML:Multiplicity.range>
+                <UML:MultiplicityRange xmi.id = 'Im4202465am11b2b336e55mm7dc1' lower = '1'
+                  upper = '1'/>
+              </UML:Multiplicity.range>
+            </UML:Multiplicity>
+          </UML:TagDefinition.multiplicity>
+        </UML:TagDefinition>
+        <UML:TagDefinition xmi.id = 'Im4202465am11b2b336e55mm7dbe' name = 'widget:type'
+          isSpecification = 'false'>
+          <UML:TagDefinition.multiplicity>
+            <UML:Multiplicity xmi.id = 'Im4202465am11b2b336e55mm7dbd'>
+              <UML:Multiplicity.range>
+                <UML:MultiplicityRange xmi.id = 'Im4202465am11b2b336e55mm7dbc' lower = '1'
+                  upper = '1'/>
+              </UML:Multiplicity.range>
+            </UML:Multiplicity>
+          </UML:TagDefinition.multiplicity>
+        </UML:TagDefinition>
+        <UML:TagDefinition xmi.id = 'Im35197781m11b32b8268amm7de4' name = 'imports'
+          isSpecification = 'false'>
+          <UML:TagDefinition.multiplicity>
+            <UML:Multiplicity xmi.id = 'Im35197781m11b32b8268amm7de3'>
+              <UML:Multiplicity.range>
+                <UML:MultiplicityRange xmi.id = 'Im35197781m11b32b8268amm7de2' lower = '1'
+                  upper = '1'/>
+              </UML:Multiplicity.range>
+            </UML:Multiplicity>
+          </UML:TagDefinition.multiplicity>
+        </UML:TagDefinition>
+        <UML:TagDefinition xmi.id = 'Im35197781m11b32b8268amm7de0' name = 'widget:allow_add'
+          isSpecification = 'false'>
+          <UML:TagDefinition.multiplicity>
+            <UML:Multiplicity xmi.id = 'Im35197781m11b32b8268amm7ddf'>
+              <UML:Multiplicity.range>
+                <UML:MultiplicityRange xmi.id = 'Im35197781m11b32b8268amm7dde' lower = '1'
+                  upper = '1'/>
+              </UML:Multiplicity.range>
+            </UML:Multiplicity>
+          </UML:TagDefinition.multiplicity>
+        </UML:TagDefinition>
       </UML:Namespace.ownedElement>
     </UML:Model>
   </XMI.content>

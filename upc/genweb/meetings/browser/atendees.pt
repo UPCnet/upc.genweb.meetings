@@ -1,0 +1,14 @@
+<xml version="1.0" tal:define="resp request/response;
+                               h python:resp.setHeader('Content-Type', 'text/xml');
+                               tipo request/filter;
+                               items python:view.getUsers()">
+    
+<select tal:attributes="tipo tipo">
+  <tal:block repeat="item items">    
+    <option tal:attributes="value item/value"
+            tal:content="item/text">
+    </option>
+  </tal:block>  
+</select>
+    
+</xml>

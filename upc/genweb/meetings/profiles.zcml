@@ -1,7 +1,7 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
-    i18n_domain="upc.genweb">
+    i18n_domain="upc.genweb.meetings">
 
   <!-- ##code-section profiles.zcml-top #fill in your manual code here -->
   <!-- ##/code-section profiles.zcml-top -->

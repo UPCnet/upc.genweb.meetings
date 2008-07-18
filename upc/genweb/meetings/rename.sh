@@ -9,5 +9,7 @@ sed -e "s/Products.meetings/upc.genweb.meetings/g" Meeting.py > Meeting.py.out
 mv Meeting.py.out Meeting.py
 sed -e "s/Products.meetings/upc.genweb.meetings/g" profiles/default/import_steps.xml > profiles/default/import_steps.xml.out
 mv profiles/default/import_steps.xml.out profiles/default/import_steps.xml
+sed -e "s/meetings/upc.genweb.meetings/g" profiles/default/types/Meeting.xml > profiles/default/types/Meeting.xml.out
+mv profiles/default/types/Meeting.xml.out profiles/default/types/Meeting.xml
 sed -e "s/Products.meetings/upc.genweb.meetings/g" setuphandlers.py > setuphandlers.py.out
 mv setuphandlers.py.out setuphandlers.py

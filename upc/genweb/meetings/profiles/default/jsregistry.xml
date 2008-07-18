@@ -11,14 +11,7 @@
  -->
 
  <!-- ##code-section jsregistry.xml -->
- <javascript cacheable="True"
-             compression="save"
-             cookable="True"
-             enabled="True"
-             expression=""
-             id="dojo.js"
-             inline="False"/>
 
-<!-- ##/code-section jsregistry.xml -->
+ <!-- ##/code-section jsregistry.xml -->
 
 </object>

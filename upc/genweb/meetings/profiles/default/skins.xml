@@ -8,13 +8,13 @@
 
  <object name="meetings_styles"
          meta_type="Filesystem Directory View"
-         directory="meetings/skins/meetings_styles"/>
+         directory="upc.genweb.meetings:skins/meetings_styles"/>
  <object name="meetings_images"
          meta_type="Filesystem Directory View"
-         directory="meetings/skins/meetings_images"/>
+         directory="upc.genweb.meetings:skins/meetings_images"/>
  <object name="meetings_templates"
          meta_type="Filesystem Directory View"
-         directory="meetings/skins/meetings_templates"/>
+         directory="upc.genweb.meetings:skins/meetings_templates"/>
  
  <skin-path name="*">
   <layer insert-after="custom" 

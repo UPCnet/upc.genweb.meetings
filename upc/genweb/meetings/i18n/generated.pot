@@ -16,6 +16,11 @@ msgstr ""
 "Preferred-Encodings: latin1 utf-8\n"
 "Domain: meetings\n"
 
+#. Default: "Meeting date and time"
+#: Meeting.py
+msgid "meetings_help_date"
+msgstr ""
+
 #. Default: "Acta"
 #: Meeting.py
 msgid "meetings_label_acta"

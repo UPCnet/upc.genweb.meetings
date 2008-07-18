@@ -14,16 +14,5 @@
  -->
 
  <!-- ##code-section cssregistry.xml -->
- <stylesheet title=""
-             cacheable="True"
-             compression="save"
-             cookable="True"
-             enabled="1"
-             expression=""
-             id="HtmlComboBoxNew.css"
-             media="all"
-             rel="stylesheet"
-             rendering="import"/>
-
-<!-- ##/code-section cssregistry.xml -->
+ <!-- ##/code-section cssregistry.xml -->
 </object>
