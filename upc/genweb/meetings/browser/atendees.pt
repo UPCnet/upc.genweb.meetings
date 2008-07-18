@@ -5,8 +5,8 @@
     
 <select tal:attributes="tipo tipo">
   <tal:block repeat="item items">    
-    <option tal:attributes="value item/value"
-            tal:content="item/text">
+    <option tal:attributes="value item/value;
+                            text item/text">
     </option>
   </tal:block>  
 </select>

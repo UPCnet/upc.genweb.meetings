@@ -21,7 +21,7 @@ class Atendees(BrowserView):
         """
         from Products.CMFCore.utils import getToolByName
         filter=self.request.get('filter','')
-        mt = getToolByName(self, 'portal_membership')
+        mt = getToolByName(self.context, 'portal_membership')
         user_ids = mt.listMemberIds()
         filtered_user_ids = [dict(value=u,text=u) for u in user_ids if u.find(filter)>=0]
         return filtered_user_ids
