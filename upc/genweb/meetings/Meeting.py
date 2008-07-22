@@ -93,9 +93,10 @@ class Meeting(BaseContent, BrowserDefaultMixin):
         """
         """
         from Products.CMFCore.utils import getToolByName
-
-        mt = getToolByName(self, 'portal_membership')
-        return DisplayList(tuple([(m.id,m.getProperty('fullname') or m.id) for m in mt.listMembers()]))
+        au = getToolByName(self, 'acl_users')
+        
+        ld_atendees = [au.LDAP.acl_users.searchUsers(cn=ld,ou='users',dc='upc')[0] for ld in self.getAtendees()]
+        return DisplayList(tuple([(u['cn'],u['sn']) for u in ld_atendees]))
 
 
     ##/code-section class-header

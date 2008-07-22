@@ -1,14 +1,23 @@
 <xml version="1.0" tal:define="resp request/response;
                                h python:resp.setHeader('Content-Type', 'text/xml');
-                               tipo request/filter;
-                               items python:view.getUsers()">
-    
-<select tal:attributes="tipo tipo">
+                               filter request/filter;
+                               response python:view.getUsers()">
+        
+<tal:block condition="python:response['result']=='error'">
+  <error tal:condition="python:response['type']=='too_many'" tal:attributes="message string:Hi ha massa resultats;"/>
+  <error tal:condition="python:response['type']=='no_results'" tal:attributes="message string:No hi ha resultats;"/>  
+</tal:block> 
+
+<tal:block condition="python:response['result']=='success'">
+<select tal:define="items response/users" 
+        tal:attributes="filter filter;
+                        response response/result">
   <tal:block repeat="item items">    
     <option tal:attributes="value item/value;
                             text item/text">
     </option>
   </tal:block>  
 </select>
-    
+</tal:block> 
+       
 </xml>
