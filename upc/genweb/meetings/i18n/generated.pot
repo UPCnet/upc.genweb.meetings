@@ -16,6 +16,21 @@ msgstr ""
 "Preferred-Encodings: latin1 utf-8\n"
 "Domain: meetings\n"
 
+#. Default: "Briefing of the meeting once concluded"
+#: Meeting.py
+msgid "meetings_help_acta"
+msgstr ""
+
+#. Default: "What is going to be discussed during the meeting"
+#: Meeting.py
+msgid "meetings_help_agenda"
+msgstr ""
+
+#. Default: "Search and select who is invited to the meeting. An e-mail will be sent to all the atendees."
+#: Meeting.py
+msgid "meetings_help_atendees"
+msgstr ""
+
 #. Default: "Meeting date and time"
 #: Meeting.py
 msgid "meetings_help_date"

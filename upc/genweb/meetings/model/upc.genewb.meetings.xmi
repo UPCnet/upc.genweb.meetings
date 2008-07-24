@@ -1,6 +1,6 @@
 <?xml version = '1.0' encoding = 'UTF-8' ?>
 <XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' xmlns:UML2 = 'org.omg.xmi.namespace.UML2'
-  timestamp = 'Thu Jul 17 23:05:49 CEST 2008'>
+  timestamp = 'Thu Jul 24 11:08:51 CEST 2008'>
   <XMI.header><XMI.documentation>
     <XMI.exporter>Netbeans XMI Writer</XMI.exporter>
     <XMI.exporterVersion>1.0</XMI.exporterVersion>
@@ -428,7 +428,7 @@
                             <XMI.field>0.0</XMI.field>
                           </UML:GraphElement.position>
                           <UML:GraphNode.size>
-                            <XMI.field>21.103</XMI.field>
+                            <XMI.field>41.2446</XMI.field>
                             <XMI.field>14.0</XMI.field>
                           </UML:GraphNode.size>
                           <UML:GraphElement.semanticModel>
@@ -442,13 +442,13 @@
                                 <XMI.field>0.0</XMI.field>
                               </UML:GraphElement.position>
                               <UML:GraphNode.size>
-                                <XMI.field>21.103</XMI.field>
+                                <XMI.field>41.2446</XMI.field>
                                 <XMI.field>14.0</XMI.field>
                               </UML:GraphNode.size>
                               <UML:GraphElement.semanticModel>
                                 <UML:Uml1SemanticModelBridge xmi.id = 'Im4202465am11b2b336e55mm7def' presentation = ''>
                                   <UML:Uml1SemanticModelBridge.element>
-                                    <UML:Class xmi.idref = 'Im4202465am11b2b336e55mm7dea'/>
+                                    <UML:Class xmi.idref = 'Im52b1340cm11b4471fddcmm7dc7'/>
                                   </UML:Uml1SemanticModelBridge.element>
                                 </UML:Uml1SemanticModelBridge>
                               </UML:GraphElement.semanticModel>
@@ -459,7 +459,7 @@
                                     <XMI.field>0.0</XMI.field>
                                   </UML:GraphElement.position>
                                   <UML:GraphNode.size>
-                                    <XMI.field>21.103</XMI.field>
+                                    <XMI.field>41.2446</XMI.field>
                                     <XMI.field>14.0</XMI.field>
                                   </UML:GraphNode.size>
                                   <UML:GraphElement.semanticModel>
@@ -544,7 +544,7 @@
                             <XMI.field>0.0</XMI.field>
                           </UML:GraphElement.position>
                           <UML:GraphNode.size>
-                            <XMI.field>21.103</XMI.field>
+                            <XMI.field>41.2446</XMI.field>
                             <XMI.field>14.0</XMI.field>
                           </UML:GraphNode.size>
                           <UML:GraphElement.semanticModel>
@@ -558,13 +558,13 @@
                                 <XMI.field>0.0</XMI.field>
                               </UML:GraphElement.position>
                               <UML:GraphNode.size>
-                                <XMI.field>21.103</XMI.field>
+                                <XMI.field>41.2446</XMI.field>
                                 <XMI.field>14.0</XMI.field>
                               </UML:GraphNode.size>
                               <UML:GraphElement.semanticModel>
                                 <UML:Uml1SemanticModelBridge xmi.id = 'Im4202465am11b2b336e55mm7ddb' presentation = ''>
                                   <UML:Uml1SemanticModelBridge.element>
-                                    <UML:Class xmi.idref = 'Im4202465am11b2b336e55mm7dea'/>
+                                    <UML:Class xmi.idref = 'Im52b1340cm11b4471fddcmm7dc7'/>
                                   </UML:Uml1SemanticModelBridge.element>
                                 </UML:Uml1SemanticModelBridge>
                               </UML:GraphElement.semanticModel>
@@ -575,7 +575,7 @@
                                     <XMI.field>0.0</XMI.field>
                                   </UML:GraphElement.position>
                                   <UML:GraphNode.size>
-                                    <XMI.field>21.103</XMI.field>
+                                    <XMI.field>41.2446</XMI.field>
                                     <XMI.field>14.0</XMI.field>
                                   </UML:GraphNode.size>
                                   <UML:GraphElement.semanticModel>
@@ -634,6 +634,103 @@
                     <UML:SimpleSemanticModelElement xmi.id = 'Im4202465am11b2b336e55mm7e2c'
                       presentation = '' typeInfo = 'DelimitedSection'/>
                   </UML:GraphElement.semanticModel>
+                  <UML:GraphElement.contained>
+                    <UML:GraphNode xmi.id = 'Im35197781m11b32b8268amm7dd4' isVisible = 'true'>
+                      <UML:GraphElement.position>
+                        <XMI.field>2.0</XMI.field>
+                        <XMI.field>2.0</XMI.field>
+                      </UML:GraphElement.position>
+                      <UML:GraphNode.size>
+                        <XMI.field>90.0</XMI.field>
+                        <XMI.field>14.0</XMI.field>
+                      </UML:GraphNode.size>
+                      <UML:DiagramElement.property>
+                        <UML:Property xmi.id = 'Im35197781m11b32b8268amm7dd2' key = 'gentleware-custom-width'
+                          value = '0.0'/>
+                        <UML:Property xmi.id = 'Im35197781m11b32b8268amm7dd1' key = 'gentleware-custom-height'
+                          value = '0.0'/>
+                      </UML:DiagramElement.property>
+                      <UML:GraphElement.semanticModel>
+                        <UML:Uml1SemanticModelBridge xmi.id = 'Im35197781m11b32b8268amm7dd3' presentation = ''>
+                          <UML:Uml1SemanticModelBridge.element>
+                            <UML:Operation xmi.idref = 'Im35197781m11b32b8268amm7dd8'/>
+                          </UML:Uml1SemanticModelBridge.element>
+                        </UML:Uml1SemanticModelBridge>
+                      </UML:GraphElement.semanticModel>
+                      <UML:GraphElement.contained>
+                        <UML:GraphNode xmi.id = 'Im35197781m11b32b8268amm7dd0' isVisible = 'true'>
+                          <UML:GraphElement.position>
+                            <XMI.field>0.0</XMI.field>
+                            <XMI.field>0.0</XMI.field>
+                          </UML:GraphElement.position>
+                          <UML:GraphNode.size>
+                            <XMI.field>8.7441</XMI.field>
+                            <XMI.field>14.0</XMI.field>
+                          </UML:GraphNode.size>
+                          <UML:GraphElement.semanticModel>
+                            <UML:SimpleSemanticModelElement xmi.id = 'Im35197781m11b32b8268amm7dcf'
+                              presentation = '' typeInfo = 'Visibility'/>
+                          </UML:GraphElement.semanticModel>
+                        </UML:GraphNode>
+                        <UML:GraphNode xmi.id = 'Im35197781m11b32b8268amm7dce' isVisible = 'true'>
+                          <UML:GraphElement.position>
+                            <XMI.field>8.7441</XMI.field>
+                            <XMI.field>0.0</XMI.field>
+                          </UML:GraphElement.position>
+                          <UML:GraphNode.size>
+                            <XMI.field>46.5674</XMI.field>
+                            <XMI.field>14.0</XMI.field>
+                          </UML:GraphNode.size>
+                          <UML:GraphElement.semanticModel>
+                            <UML:SimpleSemanticModelElement xmi.id = 'Im35197781m11b32b8268amm7dcd'
+                              presentation = '' typeInfo = 'Name'/>
+                          </UML:GraphElement.semanticModel>
+                        </UML:GraphNode>
+                        <UML:GraphNode xmi.id = 'Im35197781m11b32b8268amm7dcc' isVisible = 'true'>
+                          <UML:GraphElement.position>
+                            <XMI.field>55.3115</XMI.field>
+                            <XMI.field>0.0</XMI.field>
+                          </UML:GraphElement.position>
+                          <UML:GraphNode.size>
+                            <XMI.field>3.5771</XMI.field>
+                            <XMI.field>14.0</XMI.field>
+                          </UML:GraphNode.size>
+                          <UML:GraphElement.semanticModel>
+                            <UML:SimpleSemanticModelElement xmi.id = 'Im35197781m11b32b8268amm7dcb'
+                              presentation = '' typeInfo = 'ParameterStart'/>
+                          </UML:GraphElement.semanticModel>
+                        </UML:GraphNode>
+                        <UML:GraphNode xmi.id = 'Im35197781m11b32b8268amm7dca' isVisible = 'true'>
+                          <UML:GraphElement.position>
+                            <XMI.field>58.8887</XMI.field>
+                            <XMI.field>0.0</XMI.field>
+                          </UML:GraphElement.position>
+                          <UML:GraphNode.size>
+                            <XMI.field>3.5771</XMI.field>
+                            <XMI.field>14.0</XMI.field>
+                          </UML:GraphNode.size>
+                          <UML:GraphElement.semanticModel>
+                            <UML:SimpleSemanticModelElement xmi.id = 'Im35197781m11b32b8268amm7dc9'
+                              presentation = '' typeInfo = 'ParameterEnd'/>
+                          </UML:GraphElement.semanticModel>
+                        </UML:GraphNode>
+                        <UML:GraphNode xmi.id = 'Im35197781m11b32b8268amm7dc8' isVisible = 'true'>
+                          <UML:GraphElement.position>
+                            <XMI.field>62.4658</XMI.field>
+                            <XMI.field>0.0</XMI.field>
+                          </UML:GraphElement.position>
+                          <UML:GraphNode.size>
+                            <XMI.field>3.4805</XMI.field>
+                            <XMI.field>14.0</XMI.field>
+                          </UML:GraphNode.size>
+                          <UML:GraphElement.semanticModel>
+                            <UML:SimpleSemanticModelElement xmi.id = 'Im35197781m11b32b8268amm7dc7'
+                              presentation = '' typeInfo = 'TypeSeparator'/>
+                          </UML:GraphElement.semanticModel>
+                        </UML:GraphNode>
+                      </UML:GraphElement.contained>
+                    </UML:GraphNode>
+                  </UML:GraphElement.contained>
                 </UML:GraphNode>
               </UML:GraphElement.contained>
             </UML:GraphNode>
@@ -700,7 +797,7 @@
           isActive = 'false'>
           <UML:ModelElement.taggedValue>
             <UML:TaggedValue xmi.id = 'Im35197781m11b32b8268amm7de1' isSpecification = 'false'>
-              <UML:TaggedValue.dataValue>from Products.AJAXAddRemoveWidget import AJAXAddRemoveWidget</UML:TaggedValue.dataValue>
+              <UML:TaggedValue.dataValue>from Products.AJAXAddRemoveWidget.AJAXAddRemoveWidget import AJAXAddRemoveWidget</UML:TaggedValue.dataValue>
               <UML:TaggedValue.type>
                 <UML:TagDefinition xmi.idref = 'Im35197781m11b32b8268amm7de4'/>
               </UML:TaggedValue.type>
@@ -720,6 +817,12 @@
                   <UML:TaggedValue.dataValue>Meeting date and time</UML:TaggedValue.dataValue>
                   <UML:TaggedValue.type>
                     <UML:TagDefinition xmi.idref = 'Im4202465am11b2b336e55mm7dc3'/>
+                  </UML:TaggedValue.type>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id = 'Im52b1340cm11b4471fddcmm7dc3' isSpecification = 'false'>
+                  <UML:TaggedValue.dataValue>Date</UML:TaggedValue.dataValue>
+                  <UML:TaggedValue.type>
+                    <UML:TagDefinition xmi.idref = 'Im52b1340cm11b4471fddcmm7dc6'/>
                   </UML:TaggedValue.type>
                 </UML:TaggedValue>
               </UML:ModelElement.taggedValue>
@@ -749,6 +852,24 @@
                     <UML:TagDefinition xmi.idref = 'Im35197781m11b32b8268amm7de0'/>
                   </UML:TaggedValue.type>
                 </UML:TaggedValue>
+                <UML:TaggedValue xmi.id = 'Im35197781m11b32b8268amm7dd9' isSpecification = 'false'>
+                  <UML:TaggedValue.dataValue>&apos;getUsers&apos;</UML:TaggedValue.dataValue>
+                  <UML:TaggedValue.type>
+                    <UML:TagDefinition xmi.idref = 'Im35197781m11b32b8268amm7ddc'/>
+                  </UML:TaggedValue.type>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id = 'Im52b1340cm11b4471fddcmm7dc2' isSpecification = 'false'>
+                  <UML:TaggedValue.dataValue>Atendees</UML:TaggedValue.dataValue>
+                  <UML:TaggedValue.type>
+                    <UML:TagDefinition xmi.idref = 'Im52b1340cm11b4471fddcmm7dc6'/>
+                  </UML:TaggedValue.type>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id = 'Im4b7380ebm11b544db92emm7dbf' isSpecification = 'false'>
+                  <UML:TaggedValue.dataValue>Search and select who is invited to the meeting. An e-mail will be sent to all the atendees.</UML:TaggedValue.dataValue>
+                  <UML:TaggedValue.type>
+                    <UML:TagDefinition xmi.idref = 'Im4202465am11b2b336e55mm7dc3'/>
+                  </UML:TaggedValue.type>
+                </UML:TaggedValue>
               </UML:ModelElement.taggedValue>
               <UML2:TypedElement.type>
                 <UML:Class xmi.idref = 'Im4202465am11b2b336e55mm7deb'/>
@@ -756,16 +877,70 @@
             </UML:Attribute>
             <UML:Attribute xmi.id = 'Im4202465am11b2b336e55mm7dfd' name = 'agenda' visibility = 'private'
               isSpecification = 'false' ownerScope = 'instance' changeability = 'changeable'>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id = 'Im52b1340cm11b4471fddcmm7dc1' isSpecification = 'false'>
+                  <UML:TaggedValue.dataValue>Agenda</UML:TaggedValue.dataValue>
+                  <UML:TaggedValue.type>
+                    <UML:TagDefinition xmi.idref = 'Im4202465am11b2b336e55mm7dc7'/>
+                  </UML:TaggedValue.type>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id = 'Im4b7380ebm11b544db92emm7dbe' isSpecification = 'false'>
+                  <UML:TaggedValue.dataValue>What is going to be discussed during the meeting</UML:TaggedValue.dataValue>
+                  <UML:TaggedValue.type>
+                    <UML:TagDefinition xmi.idref = 'Im4202465am11b2b336e55mm7dc3'/>
+                  </UML:TaggedValue.type>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id = 'Im4b7380ebm11b544db92emm7dbd' isSpecification = 'false'>
+                  <UML:TaggedValue.dataValue>Agenda</UML:TaggedValue.dataValue>
+                  <UML:TaggedValue.type>
+                    <UML:TagDefinition xmi.idref = 'Im52b1340cm11b4471fddcmm7dc6'/>
+                  </UML:TaggedValue.type>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
               <UML2:TypedElement.type>
-                <UML:Class xmi.idref = 'Im4202465am11b2b336e55mm7dea'/>
+                <UML:Class xmi.idref = 'Im52b1340cm11b4471fddcmm7dc7'/>
               </UML2:TypedElement.type>
             </UML:Attribute>
             <UML:Attribute xmi.id = 'Im4202465am11b2b336e55mm7de9' name = 'acta' visibility = 'private'
               isSpecification = 'false' ownerScope = 'instance' changeability = 'changeable'>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id = 'Im4b7380ebm11b544db92emm7dc0' isSpecification = 'false'>
+                  <UML:TaggedValue.dataValue>Acta</UML:TaggedValue.dataValue>
+                  <UML:TaggedValue.type>
+                    <UML:TagDefinition xmi.idref = 'Im4202465am11b2b336e55mm7dc7'/>
+                  </UML:TaggedValue.type>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id = 'Im4b7380ebm11b544db92emm7dbc' isSpecification = 'false'>
+                  <UML:TaggedValue.dataValue>Acta</UML:TaggedValue.dataValue>
+                  <UML:TaggedValue.type>
+                    <UML:TagDefinition xmi.idref = 'Im52b1340cm11b4471fddcmm7dc6'/>
+                  </UML:TaggedValue.type>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id = 'Im4b7380ebm11b544db92emm7dbb' isSpecification = 'false'>
+                  <UML:TaggedValue.dataValue>Briefing of the meeting once concluded</UML:TaggedValue.dataValue>
+                  <UML:TaggedValue.type>
+                    <UML:TagDefinition xmi.idref = 'Im4202465am11b2b336e55mm7dc3'/>
+                  </UML:TaggedValue.type>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
               <UML2:TypedElement.type>
-                <UML:Class xmi.idref = 'Im4202465am11b2b336e55mm7dea'/>
+                <UML:Class xmi.idref = 'Im52b1340cm11b4471fddcmm7dc7'/>
               </UML2:TypedElement.type>
             </UML:Attribute>
+            <UML:Operation xmi.id = 'Im35197781m11b32b8268amm7dd8' name = 'getUsers'
+              visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+              isQuery = 'false' concurrency = 'sequential' isRoot = 'false' isLeaf = 'false'
+              isAbstract = 'false'/>
+            <UML:Method xmi.id = 'Im35197781m11b32b8268amm7dd6' isSpecification = 'false'
+              isQuery = 'false'>
+              <UML:Method.body>
+                <UML:ProcedureExpression xmi.id = 'Im35197781m11b32b8268amm7dd7' language = 'java'
+                  body = ''/>
+              </UML:Method.body>
+              <UML:Method.specification>
+                <UML:Operation xmi.idref = 'Im35197781m11b32b8268amm7dd8'/>
+              </UML:Method.specification>
+            </UML:Method>
           </UML:Classifier.feature>
         </UML:Class>
         <UML:Package xmi.id = 'Im4202465am11b2b336e55mm7e24' name = 'java' isSpecification = 'false'
@@ -851,6 +1026,31 @@
             <UML:Multiplicity xmi.id = 'Im35197781m11b32b8268amm7ddf'>
               <UML:Multiplicity.range>
                 <UML:MultiplicityRange xmi.id = 'Im35197781m11b32b8268amm7dde' lower = '1'
+                  upper = '1'/>
+              </UML:Multiplicity.range>
+            </UML:Multiplicity>
+          </UML:TagDefinition.multiplicity>
+        </UML:TagDefinition>
+        <UML:TagDefinition xmi.id = 'Im35197781m11b32b8268amm7ddc' name = 'vocabulary'
+          isSpecification = 'false'>
+          <UML:TagDefinition.multiplicity>
+            <UML:Multiplicity xmi.id = 'Im35197781m11b32b8268amm7ddb'>
+              <UML:Multiplicity.range>
+                <UML:MultiplicityRange xmi.id = 'Im35197781m11b32b8268amm7dda' lower = '1'
+                  upper = '1'/>
+              </UML:Multiplicity.range>
+            </UML:Multiplicity>
+          </UML:TagDefinition.multiplicity>
+        </UML:TagDefinition>
+        <UML:Class xmi.id = 'Im52b1340cm11b4471fddcmm7dc7' name = 'richtext' visibility = 'public'
+          isSpecification = 'false' isRoot = 'false' isLeaf = 'false' isAbstract = 'false'
+          isActive = 'false'/>
+        <UML:TagDefinition xmi.id = 'Im52b1340cm11b4471fddcmm7dc6' name = 'label'
+          isSpecification = 'false'>
+          <UML:TagDefinition.multiplicity>
+            <UML:Multiplicity xmi.id = 'Im52b1340cm11b4471fddcmm7dc5'>
+              <UML:Multiplicity.range>
+                <UML:MultiplicityRange xmi.id = 'Im52b1340cm11b4471fddcmm7dc4' lower = '1'
                   upper = '1'/>
               </UML:Multiplicity.range>
             </UML:Multiplicity>
