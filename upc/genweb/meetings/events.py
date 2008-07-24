@@ -3,7 +3,6 @@ def meeting_created(meeting, event):
     assert meeting == event.object # At least normally, see below
     host = meeting.MailHost
     
-    import pdb;pdb.set_trace()
     from Products.CMFCore.utils import getToolByName
     au = getToolByName(meeting, 'acl_users')
     owner = au.getUserById(meeting.owner_info()['id'])
@@ -34,7 +33,6 @@ def meeting_edited(meeting, event):
     assert meeting == event.object # At least normally, see below
     host = meeting.MailHost
     
-    import pdb;pdb.set_trace()
     from Products.CMFCore.utils import getToolByName
     au = getToolByName(meeting, 'acl_users')
     owner = au.getUserById(meeting.owner_info()['id'])
