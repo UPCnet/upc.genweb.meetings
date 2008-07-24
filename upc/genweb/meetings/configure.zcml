@@ -7,6 +7,13 @@
   <five:registerPackage package="." initialize=".initialize" />
   <include package=".browser"/>
 
+  <subscriber
+    for=".interfaces.IMeeting
+            Products.Archetypes.interfaces.IObjectInitializedEvent"
+    handler=".events.meeting_created"
+    />
+
+
   <!-- ##/code-section configure.zcml -->
 
 </configure>

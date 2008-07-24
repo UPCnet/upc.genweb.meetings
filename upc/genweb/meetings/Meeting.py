@@ -88,16 +88,28 @@ class Meeting(BaseContent, BrowserDefaultMixin):
     schema = Meeting_schema
 
     ##code-section class-header #fill in your manual code here
-    security.declarePublic('getUsers')
-    def getUsers(self):
+    
+    security.declarePublic('getUsersList')
+    def getUsersList(self):
         """
         """
         from Products.CMFCore.utils import getToolByName
         au = getToolByName(self, 'acl_users')
         
         ld_atendees = [au.LDAP.acl_users.searchUsers(cn=ld,ou='users',dc='upc')[0] for ld in self.getAtendees()]
-        return DisplayList(tuple([(u['cn'],u['sn']) for u in ld_atendees]))
-
+        users_list = []
+        for u in ld_atendees:
+            mail = 'mail' in u.keys() and u['mail'] or ''
+            users_list.append((u['cn'],u['sn'],mail))
+        return users_list
+    
+    security.declarePublic('getUsers')
+    def getUsers(self):
+        """
+        """
+        from Products.CMFCore.utils import getToolByName
+        au = getToolByName(self, 'acl_users')
+        return DisplayList(tuple(self.getUsersList()))
 
     ##/code-section class-header
 
