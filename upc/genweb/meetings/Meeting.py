@@ -23,6 +23,8 @@ from upc.genweb.meetings.config import *
 
 # additional imports from tagged value 'import'
 from Products.AJAXAddRemoveWidget.AJAXAddRemoveWidget import AJAXAddRemoveWidget
+from Products.ATContentTypes import ATCTMessageFactory as _
+from Products.ATContentTypes.lib.calendarsupport import CalendarSupportMixin
 
 ##code-section module-header #fill in your manual code here
 ##/code-section module-header
@@ -30,16 +32,27 @@ from Products.AJAXAddRemoveWidget.AJAXAddRemoveWidget import AJAXAddRemoveWidget
 schema = Schema((
 
     DateTimeField(
-        name='date',
+        name='startDate',
         widget=DateTimeField._properties['widget'](
-            label="Date",
-            description="Meeting date and time",
-            label_msgid='meetings_label_date',
-            description_msgid='meetings_help_date',
+            label="Meeting starts",
+            description="Date and time when meeting starts",
+            label_msgid='meetings_label_start',
+            description_msgid='meetings_help_start',
             i18n_domain='meetings',
         ),
-        label="Date",
+        label="Meeting ends",
     ),
+    DateTimeField(
+        name='endDate',
+        widget=DateTimeField._properties['widget'](
+            label="Meeting ends",
+            description="Date and time when meeting ends",
+            label_msgid='meetings_label_end',
+            description_msgid='meetings_help_end',
+            i18n_domain='meetings',
+        ),
+        label="Meeting ends",
+    ),    
     LinesField(
         name='atendees',
         widget=AJAXAddRemoveWidget(
@@ -79,6 +92,52 @@ schema = Schema((
         default_output_type='text/html',
         label="Acta",
     ),
+    LinesField('eventType',
+               required=False,
+               searchable=True,
+               languageIndependent=True,
+               widget = KeywordWidget(
+                        size = 6,
+                        description='',
+                        label = _(u'label_event_type', default=u'Event Type(s)')
+                        )),   
+    StringField('contactName',
+                required=False,
+                searchable=True,
+                accessor='contact_name',
+                widget = StringWidget(
+                        description = '',
+                        label = _(u'label_contact_name', default=u'Contact Name')
+                        )),    
+    StringField('contactPhone',
+                required=False,
+                searchable=True,
+                accessor='contact_phone',
+                validators= (),
+                widget = StringWidget(
+                        description = '',
+                        label = _(u'label_contact_phone', default=u'Contact Phone')
+                        )),    
+    StringField('contactEmail',
+                required=False,
+                searchable=True,
+                accessor='contact_email',
+                validators = ('isEmail',),
+                widget = StringWidget(
+                        description = '',
+                        label = _(u'label_contact_email', default=u'Contact E-mail')
+                        )),   
+    StringField('eventUrl',
+                required=False,
+                searchable=True,
+                accessor='event_url',
+                validators=('isURL',),
+                widget = StringWidget(
+                        description = _(u'help_url',
+                                        default=u"Web address with more info about the event. "
+                                                 "Add http:// for external links."),
+                        label = _(u'label_url', default=u'Event URL')
+                        )),    
 ),
 )
 
@@ -89,9 +148,14 @@ Meeting_schema = BaseSchema.copy() + \
     schema.copy()
 
 ##code-section after-schema #fill in your manual code here
+Meeting_schema['eventType'].widget.visible = {'view': 'invisible','edit': 'invisible'}
+Meeting_schema['contactName'].widget.visible = {'view': 'invisible','edit': 'invisible'}
+Meeting_schema['contactPhone'].widget.visible = {'view': 'invisible','edit': 'invisible'}
+Meeting_schema['contactEmail'].widget.visible = {'view': 'invisible','edit': 'invisible'}
+Meeting_schema['eventUrl'].widget.visible = {'view': 'invisible','edit': 'invisible'}
 ##/code-section after-schema
 
-class Meeting(BaseContent, BrowserDefaultMixin):
+class Meeting(BaseContent,  CalendarSupportMixin, BrowserDefaultMixin):
     """
     """
     security = ClassSecurityInfo()
@@ -110,7 +174,7 @@ class Meeting(BaseContent, BrowserDefaultMixin):
         """
         from Products.CMFCore.utils import getToolByName
         au = getToolByName(self, 'acl_users')
-        
+
         ld_atendees = []
         for ld in self.getAtendees():
             mail = ''
@@ -128,6 +192,26 @@ class Meeting(BaseContent, BrowserDefaultMixin):
 
     # Methods
 
+    security.declarePrivate('setActa')
+    def setAgenda(self,value):
+        """
+        """
+        self.schema['agenda'].set(self,value)
+        self.setDescription(value)
+    
+    security.declarePublic('start')
+    def start(self):
+        """
+        """
+        return self.startDate
+
+    security.declarePublic('end')
+    def end(self):
+        """
+        """
+        return self.endDate    
+    
+    
     security.declarePublic('getUsers')
     def getUsers(self):
         """
@@ -136,9 +220,24 @@ class Meeting(BaseContent, BrowserDefaultMixin):
         au = getToolByName(self, 'acl_users')
         return DisplayList(tuple(self.getUsersList()))
 
-    # Manually created methods
+    security.declarePublic('getUsersList')
+    def getUsersList(self):
+        """
+        """
+        from Products.CMFCore.utils import getToolByName
+        au = getToolByName(self, 'acl_users')
 
-
+        ld_atendees = []
+        for ld in self.getAtendees():
+            mail = ''
+            fullname = ld
+            user = au.getUserById(ld)
+            if 'LDAP' in user._propertysheets.keys():
+                ps = user.getPropertysheet('LDAP')
+                mail = ps.getProperty('email')
+                fullname = ps.getProperty('fullname')
+            ld_atendees.append((ld,fullname,mail))
+        return ld_atendees
 
 
 registerType(Meeting, PROJECTNAME)

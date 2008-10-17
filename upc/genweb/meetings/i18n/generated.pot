@@ -36,6 +36,16 @@ msgstr ""
 msgid "meetings_help_date"
 msgstr ""
 
+#. Default: "Date and time when meeting ends"
+#: Meeting.py
+msgid "meetings_help_end"
+msgstr ""
+
+#. Default: "Date and time when meeting starts"
+#: Meeting.py
+msgid "meetings_help_start"
+msgstr ""
+
 #. Default: "Acta"
 #: Meeting.py
 msgid "meetings_label_acta"
@@ -54,5 +64,15 @@ msgstr ""
 #. Default: "Date"
 #: Meeting.py
 msgid "meetings_label_date"
+msgstr ""
+
+#. Default: "Meeting ends"
+#: Meeting.py
+msgid "meetings_label_end"
+msgstr ""
+
+#. Default: "Meeting starts"
+#: Meeting.py
+msgid "meetings_label_start"
 msgstr ""
 

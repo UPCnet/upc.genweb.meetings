@@ -3,7 +3,6 @@
            xmlns:five="http://namespaces.zope.org/five">
   
   <include file="profiles.zcml" />
-
   <!-- ##code-section configure.zcml -->
   <five:registerPackage package="." initialize=".initialize" />
   <include package=".browser"/>
@@ -19,7 +18,7 @@
             Products.Archetypes.interfaces.IObjectEditedEvent"
     handler=".events.meeting_edited"
     />
-
+			    
   <!-- ##/code-section configure.zcml -->
 
 </configure>
