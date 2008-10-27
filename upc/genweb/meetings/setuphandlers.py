@@ -129,6 +129,10 @@ def postInstall(context):
     if shortContext != 'meetings': # avoid infinite recursions
         return
     site = context.getSite()
+    pct = getToolByName(context.getSite(), 'portal_calendar')
+    pct.calendar_types= ('Event','Meeting')
+    transaction.commit()
+    
 
 
 

@@ -33,6 +33,7 @@ schema = Schema((
 
     DateTimeField(
         name='startDate',
+        accessor='start',
         widget=DateTimeField._properties['widget'](
             label="Meeting starts",
             description="Date and time when meeting starts",
@@ -44,6 +45,7 @@ schema = Schema((
     ),
     DateTimeField(
         name='endDate',
+        accessor='end',
         widget=DateTimeField._properties['widget'](
             label="Meeting ends",
             description="Date and time when meeting ends",
@@ -199,17 +201,6 @@ class Meeting(BaseContent,  CalendarSupportMixin, BrowserDefaultMixin):
         self.schema['agenda'].set(self,value)
         self.setDescription(value)
     
-    security.declarePublic('start')
-    def start(self):
-        """
-        """
-        return self.startDate
-
-    security.declarePublic('end')
-    def end(self):
-        """
-        """
-        return self.endDate    
     
     
     security.declarePublic('getUsers')
