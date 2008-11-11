@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.1 Alpha'
+version = '1.0RC1'
 
 setup(name='upc.genweb.meetings',
       version=version,
@@ -15,9 +15,9 @@ setup(name='upc.genweb.meetings',
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
       keywords='',
-      author='Plone Foundation',
-      author_email='plone-developers@lists.sourceforge.net',
-      url='http://svn.plone.org/svn/plone/plone.app.example',
+      author='UPCnet',
+      author_email='plone.team@upcnet.es',
+      url='https://devel.upcnet.es/moduls/simple',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['upc', 'upc.genweb'],
@@ -26,6 +26,7 @@ setup(name='upc.genweb.meetings',
       install_requires=[
           'setuptools',
           # -*- Extra requirements: -*-
+          'Products.AJAXAddRemoveWidget',
       ],
       entry_points="""
       # -*- Entry points: -*-
