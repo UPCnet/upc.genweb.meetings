@@ -90,7 +90,6 @@ class Renderer(base.Renderer):
         catalog = getToolByName(context, 'portal_catalog')
         limit = self.data.count
         state = self.data.state
-        import pdb;pdb.set_trace()
         return catalog(portal_type=('Event','Meeting'),
                        review_state=state,
                        end={'query': DateTime(),
