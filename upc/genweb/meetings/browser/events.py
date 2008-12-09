@@ -25,7 +25,7 @@ class IEventsPortlet(IPortletDataProvider):
 
     state = schema.Tuple(title=_(u"Workflow state"),
                          description=_(u"Items in which workflow state to show."),
-                         default=('published', ),
+                         default=('published', 'intranet'),
                          required=True,
                          value_type=schema.Choice(
                              vocabulary="plone.app.vocabularies.WorkflowStates")
@@ -34,7 +34,7 @@ class IEventsPortlet(IPortletDataProvider):
 class Assignment(base.Assignment):
     implements(IEventsPortlet)
 
-    def __init__(self, count=5, state=('published', )):
+    def __init__(self, count=5, state=('published', 'intranet')):
         self.count = count
         self.state = state
 
