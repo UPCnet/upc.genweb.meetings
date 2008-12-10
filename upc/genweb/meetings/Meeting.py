@@ -182,8 +182,8 @@ class Meeting(BaseContent,  CalendarSupportMixin, BrowserDefaultMixin):
             mail = ''
             fullname = ld
             user = au.getUserById(ld)
-            if 'LDAP' in user._propertysheets.keys():
-                ps = user.getPropertysheet('LDAP')
+            if 'ldapUPC' in user._propertysheets.keys():
+                ps = user.getPropertysheet('ldapUPC')
                 mail = ps.getProperty('email')
                 fullname = ps.getProperty('fullname')
             ld_atendees.append((ld,fullname,mail))
@@ -210,25 +210,6 @@ class Meeting(BaseContent,  CalendarSupportMixin, BrowserDefaultMixin):
         from Products.CMFCore.utils import getToolByName
         au = getToolByName(self, 'acl_users')
         return DisplayList(tuple(self.getUsersList()))
-
-    security.declarePublic('getUsersList')
-    def getUsersList(self):
-        """
-        """
-        from Products.CMFCore.utils import getToolByName
-        au = getToolByName(self, 'acl_users')
-
-        ld_atendees = []
-        for ld in self.getAtendees():
-            mail = ''
-            fullname = ld
-            user = au.getUserById(ld)
-            if 'LDAP' in user._propertysheets.keys():
-                ps = user.getPropertysheet('LDAP')
-                mail = ps.getProperty('email')
-                fullname = ps.getProperty('fullname')
-            ld_atendees.append((ld,fullname,mail))
-        return ld_atendees
 
 
 registerType(Meeting, PROJECTNAME)
