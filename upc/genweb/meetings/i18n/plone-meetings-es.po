@@ -13,12 +13,11 @@ msgstr ""
 "Language-Name: Catalan\n"
 "Preferred-Encodings: utf-8\n"
 "Domain: plone\n"
-"X-Is-Fallback-For: ca-ad ca-es ca-fr ca-it\n"
 
 # meetings.py
 msgid "Meeting"
-msgstr "Reunió"
+msgstr "Reunión"
 
 # meetings.py
 msgid "An event type that hold the information required for a meeting."
-msgstr "Un document de tipus esdeveniment que conté la informació sobre una reunió."
+msgstr "Un documento de tipo evento que contiene la información sobre una reunión."
