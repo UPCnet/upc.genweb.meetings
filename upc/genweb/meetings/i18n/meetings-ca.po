@@ -14,6 +14,11 @@ msgstr ""
 "Domain: meetings\n"
 "X-Is-Fallback-For: ca-ad ca-es ca-fr ca-it\n"
 
+#. Default: "Brief description of the meeting"
+#: Meeting.py
+msgid "meetings_help_description"
+msgstr "Breu descripció de la reunió"
+
 #. Default: "Briefing of the meeting once concluded"
 #: Meeting.py
 msgid "meetings_help_acta"
