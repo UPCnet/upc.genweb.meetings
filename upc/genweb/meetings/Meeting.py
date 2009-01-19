@@ -31,6 +31,20 @@ from Products.ATContentTypes.lib.calendarsupport import CalendarSupportMixin
 
 schema = Schema((
 
+
+    TextField(
+        name='description',
+        allowable_content_types=('text/plain'),
+        widget=TextAreaWidget(
+            label="Description",
+            description="Brief description of the meeting",
+            label_msgid='meetings_label_description',
+            description_msgid='meetings_help_description',
+            i18n_domain='meetings',
+        ),
+        default_output_type='text/plain',
+        label="Description",
+    ),
     DateTimeField(
         name='startDate',
         accessor='start',
@@ -170,6 +184,21 @@ class Meeting(BaseContent,  CalendarSupportMixin, BrowserDefaultMixin):
 
     ##code-section class-header #fill in your manual code here
 
+    security.declarePublic('exclude_from_nav')
+    def exclude_from_nav(self):
+        """
+        """
+        value=False
+        return value
+    
+
+    security.declarePublic('Description')
+    def Description(self):
+        """
+        """
+        value=self.getDescription()
+        return value
+    
     security.declarePublic('getUsersList')
     def getUsersList(self):
         """
@@ -194,15 +223,6 @@ class Meeting(BaseContent,  CalendarSupportMixin, BrowserDefaultMixin):
 
     # Methods
 
-    security.declarePrivate('setActa')
-    def setAgenda(self,value):
-        """
-        """
-        self.schema['agenda'].set(self,value)
-        self.setDescription(value)
-    
-    
-    
     security.declarePublic('getUsers')
     def getUsers(self):
         """
