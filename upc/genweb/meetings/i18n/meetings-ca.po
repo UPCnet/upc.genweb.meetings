@@ -82,7 +82,7 @@ msgstr "Data d'inici"
 #. Default: "There are no results"
 #: atendees.pt
 msgid "meetings_too_many_results"
-msgstr "Hi ha masses resultats"
+msgstr "Hi ha masses resultats coincidents"
 
 #. Default: "There are too many results"
 #: atendees.pt

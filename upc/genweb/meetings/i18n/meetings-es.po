@@ -21,32 +21,32 @@ msgstr "Breu descripció de la reunió"
 #. Default: "Briefing of the meeting once concluded"
 #: Meeting.py
 msgid "meetings_help_acta"
-msgstr "Acta de la reunió un cop finalitzada"
+msgstr "Acta de la reunión una vez finalizada."
 
 #. Default: "What is going to be discussed during the meeting"
 #: Meeting.py
 msgid "meetings_help_agenda"
-msgstr "Descripció del que està previst de parlar a la reunió"
+msgstr "Descripción de aquello que está previsto debatir en la reunión."
 
 #. Default: "Search and select who is invited to the meeting. An e-mail will be sent to all the atendees."
 #: Meeting.py
 msgid "meetings_help_atendees"
-msgstr "Busca i escull a qui s'ha de convidar a la reunió. S'enviarà  un correu electrònic a tots els assistents."
+msgstr "Busca y escoge a los asistentes a la reunión. Se enviará un correo electrónico a todos."
 
 #. Default: "Meeting date and time"
 #: Meeting.py
 msgid "meetings_help_date"
-msgstr ""
+msgstr "Fecha y hora de la reunión."
 
 #. Default: "Date and time when meeting ends"
 #: Meeting.py
 msgid "meetings_help_end"
-msgstr "Dia i hora del final de la reunió"
+msgstr "Día y hora de finalización de la reunión"
 
 #. Default: "Date and time when meeting starts"
 #: Meeting.py
 msgid "meetings_help_start"
-msgstr "Dia i hora de l'inici de la reunió"
+msgstr "Día y hora de inicio de la reunión"
 
 #. Default: "Acta"
 #: Meeting.py
@@ -61,30 +61,30 @@ msgstr "Agenda"
 #. Default: "Atendees"
 #: Meeting.py
 msgid "meetings_label_atendees"
-msgstr "Assistents"
+msgstr "Asistentes"
 
 #. Default: "Date"
 #: Meeting.py
 msgid "meetings_label_date"
-msgstr ""
+msgstr "Fecha"
 
 #. Default: "Meeting ends"
 #: Meeting.py
 msgid "meetings_label_end"
-msgstr "Data final"
+msgstr "Fecha final"
 
 #. Default: "Meeting starts"
 #: Meeting.py
 msgid "meetings_label_start"
-msgstr "Data d'inici"
+msgstr "Fecha de inicio"
 
 #. Default: "There are no results"
 #: atendees.pt
 msgid "meetings_too_many_results"
-msgstr "Hi ha masses resultats"
+msgstr "Hay demasiados resultados coincidentes"
 
 #. Default: "There are too many results"
 #: atendees.pt
 msgid "meetings_no_results"
-msgstr "No s'ha trobat coincidències"
+msgstr "No se han encontrado coincidencias"
 
