@@ -8,7 +8,7 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="genWeb UPC Meetings"
+      title="Genweb UPC Meetings"
       directory="profiles/default"
       description="Extension profile for meetings."
       provides="Products.GenericSetup.interfaces.EXTENSION"
