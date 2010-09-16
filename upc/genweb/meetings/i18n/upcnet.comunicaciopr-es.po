@@ -1,0 +1,25 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: upcnet.comunicaciopr\n"
+"POT-Creation-Date: Wed Sep 16 11:53:55 2010\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Roberto Diaz Bertolez <plone.team@upcnet.es>\n"
+"Language-Team: UPCNet Plone Team <plone.team@upcnet.es>\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Code: es\n"
+"Language-Name: Spanish\n"
+"Preferred-Encodings: utf-8\n"
+"Domain: upcnet.comunicaciopr\n"
+
+#. Default: "Brief description of the meeting"
+#: Meeting.py
+msgid "meeting"
+msgstr "Reunión"
+
+msgid "fita"
+msgstr "Hito"
+
+msgid "tema"
+msgstr "Tema"
