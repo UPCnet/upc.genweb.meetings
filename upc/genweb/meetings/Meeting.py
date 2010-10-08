@@ -204,18 +204,21 @@ class Meeting(BaseContent,  CalendarSupportMixin, BrowserDefaultMixin):
         """
         """
         from Products.CMFCore.utils import getToolByName
-        au = getToolByName(self, 'acl_users')
+        au = getToolByName(self, 'acl_users')        
 
         ld_atendees = []
+        
         for ld in self.getAtendees():
             mail = ''
             fullname = ld
             user = au.getUserById(ld)
+            
             if 'ldapUPC' in user._propertysheets.keys():
                 ps = user.getPropertysheet('ldapUPC')
                 mail = ps.getProperty('email')
-                fullname = ps.getProperty('fullname')
-            ld_atendees.append((ld,fullname,mail))
+                fullname = ps.getProperty('fullname')    
+                name = ps.getProperty('name')              
+            ld_atendees.append((ld,name,mail))
         return ld_atendees
 
 

@@ -1,6 +1,12 @@
 Changelog
 =========
 
+1.1 (dev) (2010-10-08) 
+------------------------
+
+* Canviat id per nom complert en els assistents a les reunions 
+
+
 0.1 Alpha - Unreleased
 ----------------
 
