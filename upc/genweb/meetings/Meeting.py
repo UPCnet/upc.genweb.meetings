@@ -217,7 +217,10 @@ class Meeting(BaseContent,  CalendarSupportMixin, BrowserDefaultMixin):
                 ps = user.getPropertysheet('ldapUPC')
                 mail = ps.getProperty('email')
                 fullname = ps.getProperty('fullname')    
-                name = ps.getProperty('name')              
+                name = ps.getProperty('name')  
+            else:
+                name = ld
+                mail = ld            
             ld_atendees.append((ld,name,mail))
         return ld_atendees
 
