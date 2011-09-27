@@ -1,10 +1,26 @@
 <configure xmlns="http://namespaces.zope.org/zope"
            xmlns:browser="http://namespaces.zope.org/browser"
            xmlns:five="http://namespaces.zope.org/five"
+           xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
            xmlns:i18n="http://namespaces.zope.org/i18n">
   
   <i18n:registerTranslations directory="locales" />
+
+  <include package="Products.AJAXAddRemoveWidget" />
+
+  
   <include file="profiles.zcml" />
+
+
+
+  <genericsetup:registerProfile
+  name="default"
+  title="Genweb UPC Meeting"
+  description="GenWeb UPC Meeting"
+  directory="profiles/default"
+  provides="Products.GenericSetup.interfaces.EXTENSION"
+  />
+
   <!-- ##code-section configure.zcml -->
   <five:registerPackage package="." initialize=".initialize" />
   <include package=".browser"/>
