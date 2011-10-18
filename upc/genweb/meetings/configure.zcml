@@ -1,8 +1,21 @@
 <configure xmlns="http://namespaces.zope.org/zope"
            xmlns:browser="http://namespaces.zope.org/browser"
-           xmlns:five="http://namespaces.zope.org/five">
+           xmlns:five="http://namespaces.zope.org/five"
+           xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+           xmlns:i18n="http://namespaces.zope.org/i18n">
   
-  <include file="profiles.zcml" />
+  <i18n:registerTranslations directory="locales" />
+
+  <include package="Products.AJAXAddRemoveWidget" />
+
+  
+  <genericsetup:registerProfile
+  name="default"
+  title="Genweb UPC Meeting"
+  description="GenWeb UPC Meeting"
+  directory="profiles/default"
+  provides="Products.GenericSetup.interfaces.EXTENSION"
+  />
 
   <five:registerPackage package="." initialize=".initialize" />
 

@@ -2,7 +2,7 @@
                                h python:resp.setHeader('Content-Type', 'text/xml');
                                filter request/filter;
                                response python:view.getUsers()"
-                               i18n:domain="meetings">
+                               i18n:domain="upc.genweb.meetings">
         
 <tal:block condition="python:response['result']=='error'">
   <error tal:condition="python:response['type']=='too_many'" message="There are too many results" i18n:attributes="message meetings_too_many_results"/>

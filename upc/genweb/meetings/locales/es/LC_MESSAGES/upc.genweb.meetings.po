@@ -11,12 +11,12 @@ msgstr ""
 "Language-Code: es\n"
 "Language-Name: Spanish\n"
 "Preferred-Encodings: utf-8\n"
-"Domain: meetings\n"
+"Domain: upc.genweb.meetings\n"
  
 #. Default: "Brief description of the meeting"
 #: Meeting.py
 msgid "meetings_help_description"
-msgstr "Breu descripció de la reunió"
+msgstr "Breve descripción de la reunión"
 
 #. Default: "Briefing of the meeting once concluded"
 #: Meeting.py
