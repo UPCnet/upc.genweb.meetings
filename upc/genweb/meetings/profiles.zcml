@@ -3,9 +3,6 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="upc.genweb.meetings">
 
-  <!-- ##code-section profiles.zcml-top #fill in your manual code here -->
-  <!-- ##/code-section profiles.zcml-top -->
-
   <genericsetup:registerProfile
       name="default"
       title="Genweb UPC Meetings"
@@ -13,8 +10,5 @@
       description="Extension profile for meetings."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
-  
-  <!-- ##code-section profiles.zcml #fill in your manual code here -->
-  <!-- ##/code-section profiles.zcml -->
 
 </configure>

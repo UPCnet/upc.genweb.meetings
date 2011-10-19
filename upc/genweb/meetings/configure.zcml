@@ -9,10 +9,6 @@
   <include package="Products.AJAXAddRemoveWidget" />
 
   
-  <include file="profiles.zcml" />
-
-
-
   <genericsetup:registerProfile
   name="default"
   title="Genweb UPC Meeting"
@@ -21,8 +17,8 @@
   provides="Products.GenericSetup.interfaces.EXTENSION"
   />
 
-  <!-- ##code-section configure.zcml -->
   <five:registerPackage package="." initialize=".initialize" />
+
   <include package=".browser"/>
 
   <subscriber
@@ -36,7 +32,5 @@
             Products.Archetypes.interfaces.IObjectEditedEvent"
     handler=".events.meeting_edited"
     />
-			    
-  <!-- ##/code-section configure.zcml -->
 
 </configure>

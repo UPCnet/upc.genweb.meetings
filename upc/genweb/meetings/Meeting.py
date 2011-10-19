@@ -21,13 +21,9 @@ from Products.CMFDynamicViewFTI.browserdefault import BrowserDefaultMixin
 
 from upc.genweb.meetings.config import *
 
-# additional imports from tagged value 'import'
 from Products.AJAXAddRemoveWidget.AJAXAddRemoveWidget import AJAXAddRemoveWidget
 from Products.ATContentTypes import ATCTMessageFactory as _
 from Products.ATContentTypes.lib.calendarsupport import CalendarSupportMixin
-
-##code-section module-header #fill in your manual code here
-##/code-section module-header
 
 schema = Schema((
 
@@ -157,9 +153,6 @@ schema = Schema((
 ),
 )
 
-##code-section after-local-schema #fill in your manual code here
-##/code-section after-local-schema
-
 Meeting_schema = BaseSchema.copy() + \
     schema.copy()
 
@@ -190,7 +183,7 @@ class Meeting(BaseContent,  CalendarSupportMixin, BrowserDefaultMixin):
         """
         value=False
         return value
-    
+
 
     security.declarePublic('Description')
     def Description(self):
@@ -216,7 +209,7 @@ class Meeting(BaseContent,  CalendarSupportMixin, BrowserDefaultMixin):
             if 'ldapUPC' in user._propertysheets.keys():
                 ps = user.getPropertysheet('ldapUPC')
                 mail = ps.getProperty('email')
-                fullname = ps.getProperty('fullname')    
+                fullname = ps.getProperty('fullname')
                 name = ps.getProperty('name')  
             else:
                 name = ld
@@ -239,10 +232,3 @@ class Meeting(BaseContent,  CalendarSupportMixin, BrowserDefaultMixin):
 
 
 registerType(Meeting, PROJECTNAME)
-# end of class Meeting
-
-##code-section module-footer #fill in your manual code here
-##/code-section module-footer
-
-
-
