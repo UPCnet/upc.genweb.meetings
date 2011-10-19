@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: upc.genweb.meetings\n"
 "POT-Creation-Date: Wed Jul 16 11:53:55 2008\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Ariel <ariel.von.barnekow@upcnet.es>\n"
+"Last-Translator: Ariel von Barnekow <ariel.von.barnekow@upcnet.es>\n"
 "Language-Team: UPCNet Plone Team <plone.team@upcnet.es>\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,7 +12,8 @@ msgstr ""
 "Language-Name: Spanish\n"
 "Preferred-Encodings: utf-8\n"
 "Domain: upc.genweb.meetings\n"
- 
+"MIME-Version: 1.0\n"
+
 #. Default: "Brief description of the meeting"
 #: Meeting.py
 msgid "meetings_help_description"
@@ -61,7 +62,7 @@ msgstr "Agenda"
 #. Default: "Atendees"
 #: Meeting.py
 msgid "meetings_label_atendees"
-msgstr "Asistentes"
+msgstr "Asistents"
 
 #. Default: "Date"
 #: Meeting.py
