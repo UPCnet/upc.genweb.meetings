@@ -213,7 +213,11 @@ class Meeting(BaseContent,  CalendarSupportMixin, BrowserDefaultMixin):
                 name = ps.getProperty('name')  
             else:
                 name = ld
-                mail = ld            
+                mail = ld
+           
+            if name == None:
+                name = ld 
+
             ld_atendees.append((ld,name,mail))
         return ld_atendees
 
