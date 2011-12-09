@@ -33,7 +33,7 @@ def meeting_created(meeting, event):
                                          subtype='plain', 
                                          charset='UTF-8', 
                                          debug=False, 
-                                         From=from_email.encode('UTF-8'))
+                                         )
 
 def meeting_edited(meeting, event):
     assert meeting == event.object # At least normally, see below
