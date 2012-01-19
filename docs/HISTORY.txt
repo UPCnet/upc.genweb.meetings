@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.4 (2012-01-19)
+----------------
+* Error corregit amb el securesend
+
 1.3 (2011-12-09)
 ----------------
 * Evitar error amb nom buit
