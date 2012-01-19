@@ -69,5 +69,6 @@ def meeting_edited(meeting, event):
                                          subtype='plain', 
                                          charset='UTF-8', 
                                          debug=False, 
-                                         From=from_email.encode('UTF-8'))
+                                         )
+
 
