@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.5 (unreleased)
+----------------
+* Afegir *.mo
+
 1.4 (2012-01-19)
 ----------------
 * Error corregit amb el securesend
