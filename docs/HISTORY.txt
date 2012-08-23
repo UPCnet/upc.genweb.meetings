@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.6 (unreleased)
+----------------
+* Add missing (empty) folder
+
 1.5 (2012-04-04)
 ----------------
 * Afegir *.mo
@@ -17,9 +21,9 @@ Changelog
 ----------------
 * GenwebUPC 4.1 ready
 
-1.1 (2010-10-08) 
+1.1 (2010-10-08)
 ----------------
-* Canviat id per nom complert en els assistents a les reunions 
+* Canviat id per nom complert en els assistents a les reunions
 
 0.1 Alpha - Unreleased
 ----------------
