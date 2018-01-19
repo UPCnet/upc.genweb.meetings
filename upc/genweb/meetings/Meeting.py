@@ -205,12 +205,14 @@ class Meeting(BaseContent,  CalendarSupportMixin, BrowserDefaultMixin):
             mail = ''
             fullname = ld
             user = au.getUserById(ld)
-            
-            if 'ldapUPC' in user._propertysheets.keys():
-                ps = user.getPropertysheet('ldapUPC')
-                mail = ps.getProperty('email')
-                fullname = ps.getProperty('fullname')
-                name = ps.getProperty('name')  
+            try:
+                if 'ldapUPC' in user._propertysheets.keys():
+                    ps = user.getPropertysheet('ldapUPC')
+                    mail = ps.getProperty('email')
+                    fullname = ps.getProperty('fullname')
+                    name = ps.getProperty('name')
+            except:
+                continue
             else:
                 name = ld
                 mail = ld
